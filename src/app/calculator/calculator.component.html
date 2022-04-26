@@ -1,0 +1,46 @@
+<div class="container">
+  <!-- Button trigger modal -->
+  <a id="calculator" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    <i class="fa fa-calculator" aria-hidden="true"></i>
+  </a>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="text" id="text"><span class="change" id="change">Bitcoin price</span> calculator</h5>
+        <button type="button" (click)="setBack()" class="btnClose fa fa-times" data-bs-dismiss="modal"
+          aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+
+          <div class="col-md-6 mb-5">
+            <p><span class="change" id="change">Bitcoin</span> value</p>
+            <div class="input-group mb-3">
+              <input type="text" class="form-control obsidiamText2" placeholder="0.00" aria-label="Bitcoin"
+                aria-describedby="basic-addon1" value="{{bitcoinValue}}" (keyup)="calculateUSDtoBitcoin($event)">
+              <span class="input-group-text obsidiamText" style="background-color: white;" id="basic-addon1"><img
+                  src="../../assets/img/Bitcoin_zufb6b.png" width="23px" alt="" style="margin-right: 5%;">BTC</span>
+            </div>
+          </div>
+
+          <div class="col-md-6 mb-5">
+            <p><span class="change" id="change">USD</span> result</p>
+            <div class="input-group mb-3">
+              <input type="text" class="form-control obsidiamText2" placeholder="0.00" aria-label="USD"
+                aria-describedby="basic-addon1" value="{{dollarResult}}">
+              <span class="input-group-text obsidiamText" style="background-color: white;" id="basic-addon1">USD</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="modal-footer">
+
+      </div>
+    </div>
+  </div>
+</div>

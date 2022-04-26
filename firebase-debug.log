@@ -1,0 +1,89 @@
+[debug] [2022-04-26T20:28:58.934Z] ----------------------------------------------------------------------
+[debug] [2022-04-26T20:28:58.936Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\luis_\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2022-04-26T20:28:58.936Z] CLI Version:   10.7.1
+[debug] [2022-04-26T20:28:58.937Z] Platform:      win32
+[debug] [2022-04-26T20:28:58.937Z] Node Version:  v16.14.2
+[debug] [2022-04-26T20:28:58.938Z] Time:          Tue Apr 26 2022 14:28:58 GMT-0600 (hora estándar central)
+[debug] [2022-04-26T20:28:58.938Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-04-26T20:28:58.945Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-04-26T20:28:58.945Z] > authorizing via signed-in user (luisarmando.rodriguezaraya@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\Archivos armando\1) Trabajo\Proyectos de práctica\Obsidian\proyecto-obsidiam
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2022-04-26T20:29:12.049Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2022-04-26T20:29:12.540Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2022-04-26T20:29:12.540Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project pryecto-obsidiam (pryecto-obsidiam) 
+[info] 
+=== Database Setup
+[info] i  database: ensuring required API firebasedatabase.googleapis.com is enabled... 
+[debug] [2022-04-26T20:29:17.296Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/pryecto-obsidiam/services/firebasedatabase.googleapis.com [none]
+[debug] [2022-04-26T20:29:18.124Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/pryecto-obsidiam/services/firebasedatabase.googleapis.com 200
+[debug] [2022-04-26T20:29:18.125Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/pryecto-obsidiam/services/firebasedatabase.googleapis.com [omitted]
+[warn] !  database: missing required API firebasedatabase.googleapis.com. Enabling now... 
+[debug] [2022-04-26T20:29:18.126Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/pryecto-obsidiam/services/firebasedatabase.googleapis.com:enable [none]
+[debug] [2022-04-26T20:29:19.170Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/pryecto-obsidiam/services/firebasedatabase.googleapis.com:enable 200
+[debug] [2022-04-26T20:29:19.170Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/pryecto-obsidiam/services/firebasedatabase.googleapis.com:enable [omitted]
+[debug] [2022-04-26T20:29:29.172Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/pryecto-obsidiam/services/firebasedatabase.googleapis.com [none]
+[debug] [2022-04-26T20:29:29.629Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/pryecto-obsidiam/services/firebasedatabase.googleapis.com 200
+[debug] [2022-04-26T20:29:29.629Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/pryecto-obsidiam/services/firebasedatabase.googleapis.com [omitted]
+[info] +  database: required API firebasedatabase.googleapis.com is enabled 
+[info] 
+[debug] [2022-04-26T20:29:29.632Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/pryecto-obsidiam [none]
+[debug] [2022-04-26T20:29:30.138Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/pryecto-obsidiam 200
+[debug] [2022-04-26T20:29:30.138Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/pryecto-obsidiam {"projectId":"pryecto-obsidiam","projectNumber":"801038006248","displayName":"pryecto-obsidiam","name":"projects/pryecto-obsidiam","resources":{"hostingSite":"pryecto-obsidiam"},"state":"ACTIVE"}
+[debug] [2022-04-26T20:29:59.452Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2022-04-26T20:29:59.452Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-04-26T20:29:59.664Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","date":"Tue, 26 Apr 2022 20:30:26 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-04-26T20:29:59.683Z] >>> HTTP REQUEST POST https://firebasedatabase.googleapis.com/v1beta/projects/pryecto-obsidiam/locations/us-central1/instances?databaseId=pryecto-obsidiam-default-rtdb&validateOnly=true  
+ {"type":"default_database"}
+[debug] [2022-04-26T20:30:00.473Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 26 Apr 2022 20:30:27 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-04-26T20:30:00.476Z] >>> HTTP REQUEST POST https://firebasedatabase.googleapis.com/v1beta/projects/pryecto-obsidiam/locations/us-central1/instances?databaseId=pryecto-obsidiam-default-rtdb  
+ {"type":"default_database"}
+[debug] [2022-04-26T20:30:01.394Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 26 Apr 2022 20:30:28 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] Firebase Realtime Database Security Rules allow you to define how your data should be
+[info] structured and when your data can be read from and written to.
+[info] 
+[debug] [2022-04-26T20:30:04.392Z] >>> HTTP REQUEST GET https://pryecto-obsidiam-default-rtdb.firebaseio.com/.settings/rules.json  
+ 
+[debug] [2022-04-26T20:30:05.289Z] <<< HTTP RESPONSE 200 {"server":"nginx","date":"Tue, 26 Apr 2022 20:30:32 GMT","content-type":"application/json; charset=utf-8","content-length":"161","connection":"keep-alive","access-control-allow-origin":"*","cache-control":"no-cache","strict-transport-security":"max-age=31556926; includeSubDomains; preload"}
+[info] +  Database Rules for pryecto-obsidiam-default-rtdb have been written to database.rules.json. 
+[info] Future modifications to database.rules.json will update Realtime Database Security Rules when you run
+[info] firebase deploy.
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2022-04-26T20:30:11.484Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2022-04-26T20:30:12.143Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2022-04-26T20:30:12.143Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"9.6.11","browserURL":"https://www.gstatic.com/firebasejs/9.6.11/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/9.6.11/firebase.tgz"},"live":{"version":"9.6","browserURL":"https://www.gstatic.com/firebasejs/live/9.6/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/9.6/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/9.6.11/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/9.6.11/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/9.6.11/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/9.6.11/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/9.6.11/firebase-auth/cordova.js","auth/react-native":"https://www.gstatic.com/firebasejs/9.6.11/firebase-auth/react-native.js","functions":"https://www.gstatic.com/firebasejs/9.6.11/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/9.6.11/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/9.6.11/firebase-firestore/lite.js","storage":"https://www.gstatic.com/firebasejs/9.6.11/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/9.6.11/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/9.6.11/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/9.6.11/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/9.6.11/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/9.6.11/firebase-database.js","firestore.memory":"https://www.gstatic.com/firebasejs/9.6.11/firebase-firestore.memory.js"}}
+[info] +  Wrote public/index.html 
+[info] 
+[info] i  Detected a .git folder at D:\Archivos armando\1) Trabajo\Proyectos de práctica\Obsidian\proyecto-obsidiam 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=202879005&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
